@@ -42,15 +42,15 @@ body {
         rgba(255,255,255,.94)
     ),
     url('images/01.jpg') center/cover;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     z-index: 9999;
     text-align: center;
     padding: 25px;
-    
+
     transition: 1s ease;
 }
 
@@ -364,6 +364,78 @@ section {
 }
 
 /* =========================
+   AMPLOP DIGITAL
+========================= */
+
+.gift {
+    background: #f4f0ea;
+}
+
+.gift-card {
+    max-width: 500px;
+    margin: 35px auto 0;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.gift-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.gift-card h3 {
+    color: #8b6f47;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.gift-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.dana-box {
+    background: #f4f0ea;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.dana-box h4 {
+    font-size: 22px;
+    color: #118eea;
+    margin-bottom: 10px;
+}
+
+.dana-number {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+.copy-btn {
+    margin-top: 15px;
+    padding: 11px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #8b6f47;
+    color: white;
+    font-family: 'Poppins';
+    cursor: pointer;
+    transition: .3s;
+}
+
+.copy-btn:hover {
+    background: #735a39;
+    transform: scale(1.03);
+}
+
+/* =========================
    FOOTER
 ========================= */
 
@@ -495,9 +567,7 @@ footer p {
 
 <body>
 
-<!-- =========================
-     OPENING
-========================= -->
+<!-- OPENING -->
 
 <div class="opening" id="opening">
 
@@ -518,9 +588,7 @@ footer p {
 </div>
 
 
-<!-- =========================
-     MUSIC
-========================= -->
+<!-- MUSIC -->
 
 <audio id="music" loop>
     <source src="music.mp3" type="audio/mpeg">
@@ -531,9 +599,7 @@ footer p {
 </button>
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <section class="hero">
 
@@ -554,9 +620,7 @@ footer p {
 </section>
 
 
-<!-- =========================
-     COUPLE
-========================= -->
+<!-- COUPLE -->
 
 <section class="couple">
 
@@ -592,9 +656,7 @@ footer p {
 
             </div>
 
-            <div class="and">
-                &
-            </div>
+            <div class="and">&</div>
 
             <div class="person">
 
@@ -604,7 +666,7 @@ footer p {
 
                 <p>
                     Putri dari<br>
-                    Bapak  SUYANDI/YANDI.<br>
+                    Bapak SUYANDI/YANDI.<br>
                     & Ibu SITI ROHANI/ANI
                 </p>
 
@@ -617,9 +679,7 @@ footer p {
 </section>
 
 
-<!-- =========================
-     COUNTDOWN
-========================= -->
+<!-- COUNTDOWN -->
 
 <section class="countdown-section">
 
@@ -662,9 +722,7 @@ footer p {
 </section>
 
 
-<!-- =========================
-     EVENT
-========================= -->
+<!-- EVENT -->
 
 <section class="event">
 
@@ -702,7 +760,9 @@ footer p {
                 href="https://maps.app.goo.gl/o4gL2iKCDeP3w1sH8?g_st=ac"
                 target="_blank"
                 class="map-btn">
+
                 📍 Lihat Lokasi
+
             </a>
 
         </div>
@@ -712,9 +772,7 @@ footer p {
 </section>
 
 
-<!-- =========================
-     GALLERY
-========================= -->
+<!-- GALLERY -->
 
 <section class="gallery">
 
@@ -731,17 +789,11 @@ footer p {
         <div class="gallery-grid">
 
             <img src="images/01.jpg" alt="Foto 1">
-
             <img src="images/02.jpg" alt="Foto 2">
-
             <img src="images/03.jpg" alt="Foto 3">
-
             <img src="images/04.jpg" alt="Foto 4">
-
             <img src="images/05.jpg" alt="Foto 5">
-
             <img src="images/06.jpg" alt="Foto 6">
-
             <img src="images/07.jpg" alt="Foto 7">
 
         </div>
@@ -751,9 +803,7 @@ footer p {
 </section>
 
 
-<!-- =========================
-     RSVP
-========================= -->
+<!-- RSVP -->
 
 <section class="rsvp">
 
@@ -781,7 +831,9 @@ footer p {
             <button
                 class="rsvp-btn"
                 onclick="kirimWhatsApp()">
+
                 Kirim Ucapan
+
             </button>
 
         </div>
@@ -792,8 +844,78 @@ footer p {
 
 
 <!-- =========================
-     FOOTER
+     AMPLOP DIGITAL
 ========================= -->
+
+<section class="gift">
+
+    <div class="container">
+
+        <p class="small-title">
+            Wedding Gift
+        </p>
+
+        <h2 class="title">
+            Amplop Digital
+        </h2>
+
+        <p class="text">
+            Doa restu Anda merupakan hadiah terindah bagi kami.
+            Namun apabila Bapak/Ibu/Saudara/i ingin memberikan
+            tanda kasih, dapat melalui DANA berikut.
+        </p>
+
+        <div class="gift-card">
+
+            <div class="gift-icon">
+                💝
+            </div>
+
+            <h3>Kirim Amplop Digital</h3>
+
+            <p>
+                Anda dapat mengirimkan tanda kasih melalui
+                akun DANA berikut.
+            </p>
+
+            <div class="dana-box">
+
+                <h4>DANA</h4>
+
+                <p>
+                    Atas Nama
+                </p>
+
+                <strong>
+                    MUHAMAD IKHSAN APRIZAL PRIATNA
+                </strong>
+
+                <div
+                    class="dana-number"
+                    id="danaNumber">
+
+                    088293421004
+
+                </div>
+
+                <button
+                    class="copy-btn"
+                    onclick="copyDana()">
+
+                    📋 Salin Nomor DANA
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -1030,6 +1152,38 @@ function kirimWhatsApp() {
         text;
 
     window.open(url, "_blank");
+
+}
+
+
+/* =========================
+   COPY DANA
+========================= */
+
+function copyDana() {
+
+    const danaNumber =
+        document
+        .getElementById("danaNumber")
+        .innerText
+        .trim();
+
+    navigator.clipboard
+        .writeText(danaNumber)
+        .then(() => {
+
+            alert(
+                "Nomor DANA berhasil disalin!"
+            );
+
+        })
+        .catch(() => {
+
+            alert(
+                "Gagal menyalin nomor DANA."
+            );
+
+        });
 
 }
 
