@@ -30,18 +30,17 @@ body {
     overflow-x: hidden;
 }
 
-/* =========================
-   OPENING
-========================= */
+/* OPENING */
 
 .opening {
     position: fixed;
     inset: 0;
-    background: linear-gradient(
-        rgba(255,255,255,.88),
-        rgba(255,255,255,.94)
-    ),
-    url('images/01.jpg') center/cover;
+    background:
+        linear-gradient(
+            rgba(255,255,255,.88),
+            rgba(255,255,255,.94)
+        ),
+        url('images/01.jpg') center/cover;
 
     display: flex;
     align-items: center;
@@ -50,7 +49,6 @@ body {
     z-index: 9999;
     text-align: center;
     padding: 25px;
-
     transition: 1s ease;
 }
 
@@ -92,17 +90,9 @@ body {
     color: white;
     font-family: 'Poppins';
     cursor: pointer;
-    transition: .3s;
 }
 
-.open-btn:hover {
-    transform: scale(1.05);
-    background: #735a39;
-}
-
-/* =========================
-   GENERAL
-========================= */
+/* GENERAL */
 
 section {
     min-height: 100vh;
@@ -141,12 +131,9 @@ section {
     font-size: 14px;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
-    position: relative;
     min-height: 100vh;
     background:
         linear-gradient(
@@ -172,9 +159,7 @@ section {
     font-size: 14px;
 }
 
-/* =========================
-   COUPLE
-========================= */
+/* COUPLE */
 
 .couple {
     background: #fff;
@@ -207,7 +192,7 @@ section {
 
 .person h3 {
     margin-top: 30px;
-    font-size: 25px;
+    font-size: 20px;
     color: #8b6f47;
     font-weight: normal;
 }
@@ -223,9 +208,7 @@ section {
     color: #aaa;
 }
 
-/* =========================
-   COUNTDOWN
-========================= */
+/* COUNTDOWN */
 
 .countdown-section {
     background: #f4f0ea;
@@ -259,9 +242,7 @@ section {
     color: #999;
 }
 
-/* =========================
-   EVENT
-========================= */
+/* EVENT */
 
 .event {
     background: white;
@@ -298,9 +279,7 @@ section {
     font-size: 13px;
 }
 
-/* =========================
-   GALLERY
-========================= */
+/* GALLERY */
 
 .gallery {
     background: #f4f0ea;
@@ -325,9 +304,7 @@ section {
     transform: scale(1.04);
 }
 
-/* =========================
-   RSVP
-========================= */
+/* RSVP */
 
 .rsvp {
     background: white;
@@ -363,9 +340,7 @@ section {
     cursor: pointer;
 }
 
-/* =========================
-   AMPLOP DIGITAL
-========================= */
+/* AMPLOP DIGITAL */
 
 .gift {
     background: #f4f0ea;
@@ -394,27 +369,27 @@ section {
 .gift-card p {
     font-size: 14px;
     line-height: 1.8;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.dana-box {
+.bank-box {
     background: #f4f0ea;
     padding: 20px;
     border-radius: 12px;
     margin-top: 15px;
 }
 
-.dana-box h4 {
+.bank-box h4 {
     font-size: 22px;
-    color: #118eea;
+    color: #8b6f47;
     margin-bottom: 10px;
 }
 
-.dana-number {
-    font-size: 18px;
+.rekening-number {
+    font-size: 20px;
     font-weight: 600;
     color: #555;
-    margin: 10px 0;
+    margin: 15px 0;
     letter-spacing: 1px;
 }
 
@@ -427,17 +402,9 @@ section {
     color: white;
     font-family: 'Poppins';
     cursor: pointer;
-    transition: .3s;
 }
 
-.copy-btn:hover {
-    background: #735a39;
-    transform: scale(1.03);
-}
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
     padding: 60px 20px;
@@ -458,9 +425,7 @@ footer p {
     color: #888;
 }
 
-/* =========================
-   MUSIC BUTTON
-========================= */
+/* MUSIC BUTTON */
 
 .music-btn {
     position: fixed;
@@ -482,9 +447,7 @@ footer p {
     animation: rotate 3s linear infinite;
 }
 
-/* =========================
-   FLOWER DECORATION
-========================= */
+/* FLOWER ANIMATION */
 
 .flower {
     position: fixed;
@@ -497,9 +460,7 @@ footer p {
 
 @keyframes fall {
     to {
-        transform:
-            translateY(110vh)
-            rotate(360deg);
+        transform: translateY(110vh) rotate(360deg);
         opacity: 0;
     }
 }
@@ -526,9 +487,7 @@ footer p {
     }
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media(max-width: 600px) {
 
@@ -549,10 +508,6 @@ footer p {
         gap: 20px;
     }
 
-    .and {
-        font-size: 40px;
-    }
-
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -560,6 +515,7 @@ footer p {
     .gallery-grid img {
         height: 180px;
     }
+
 }
 
 </style>
@@ -591,7 +547,7 @@ footer p {
 <!-- MUSIC -->
 
 <audio id="music" loop>
-    <source src="a-thousand-years.mp3" type="audio/mpeg">
+    <source src="N67.mp3.mp3" type="audio/mpeg">
 </audio>
 
 <button class="music-btn" id="musicBtn" onclick="toggleMusic()">
@@ -650,7 +606,7 @@ footer p {
 
                 <p>
                     Putra dari<br>
-                    Bapak MARSADI/MARGEN.<br>
+                    Bapak MARSADI/MARGEN<br>
                     & Ibu SURTI
                 </p>
 
@@ -666,7 +622,7 @@ footer p {
 
                 <p>
                     Putri dari<br>
-                    Bapak SUYANDI/YANDI.<br>
+                    Bapak SUYANDI/YANDI<br>
                     & Ibu SITI ROHANI/ANI
                 </p>
 
@@ -751,8 +707,8 @@ footer p {
             <br>
 
             <p>
-                Gedung / Rumah Acara<br>
-                Alamat lengkap acara<br>
+                Rumah Acara<br>
+                kp.ciodeng rt03/01 desa palasari kec legok,kab tangerang<br>
                 Kota, Indonesia
             </p>
 
@@ -843,9 +799,7 @@ footer p {
 </section>
 
 
-<!-- =========================
-     AMPLOP DIGITAL
-========================= -->
+<!-- AMPLOP DIGITAL -->
 
 <section class="gift">
 
@@ -862,7 +816,7 @@ footer p {
         <p class="text">
             Doa restu Anda merupakan hadiah terindah bagi kami.
             Namun apabila Bapak/Ibu/Saudara/i ingin memberikan
-            tanda kasih, dapat melalui DANA berikut.
+            tanda kasih, dapat melalui rekening berikut.
         </p>
 
         <div class="gift-card">
@@ -875,34 +829,34 @@ footer p {
 
             <p>
                 Anda dapat mengirimkan tanda kasih melalui
-                akun DANA berikut.
+                rekening berikut.
             </p>
 
-            <div class="dana-box">
+            <div class="bank-box">
 
-                <h4>DANA</h4>
+                <h4>Bank Mandiri</h4>
 
                 <p>
                     Atas Nama
                 </p>
 
                 <strong>
-                    MUHAMAD IKHSAN APRIZAL PRIATNA
+                    SEVTIANTI
                 </strong>
 
                 <div
-                    class="dana-number"
-                    id="danaNumber">
+                    class="rekening-number"
+                    id="rekeningNumber">
 
-                    088293421004
+                    1760003805031
 
                 </div>
 
                 <button
                     class="copy-btn"
-                    onclick="copyDana()">
+                    onclick="copyRekening()">
 
-                    📋 Salin Nomor DANA
+                    📋 Salin Nomor Rekening
 
                 </button>
 
@@ -936,9 +890,7 @@ footer p {
 
 <script>
 
-/* =========================
-   OPEN INVITATION
-========================= */
+/* OPEN INVITATION */
 
 function openInvitation() {
 
@@ -969,9 +921,7 @@ function openInvitation() {
 }
 
 
-/* =========================
-   MUSIC
-========================= */
+/* MUSIC */
 
 function toggleMusic() {
 
@@ -1000,9 +950,7 @@ function toggleMusic() {
 }
 
 
-/* =========================
-   COUNTDOWN
-========================= */
+/* COUNTDOWN */
 
 const weddingDate =
     new Date("September 19, 2026 09:00:00").getTime();
@@ -1055,24 +1003,15 @@ setInterval(function () {
         );
 
 
-    document.getElementById("days")
-        .innerHTML = days;
-
-    document.getElementById("hours")
-        .innerHTML = hours;
-
-    document.getElementById("minutes")
-        .innerHTML = minutes;
-
-    document.getElementById("seconds")
-        .innerHTML = seconds;
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
 
 }, 1000);
 
 
-/* =========================
-   FLOWER ANIMATION
-========================= */
+/* FLOWER ANIMATION */
 
 function createFlower() {
 
@@ -1116,9 +1055,7 @@ function createFlower() {
 setInterval(createFlower, 1200);
 
 
-/* =========================
-   WHATSAPP RSVP
-========================= */
+/* WHATSAPP RSVP */
 
 function kirimWhatsApp() {
 
@@ -1156,31 +1093,29 @@ function kirimWhatsApp() {
 }
 
 
-/* =========================
-   COPY DANA
-========================= */
+/* COPY NOMOR REKENING */
 
-function copyDana() {
+function copyRekening() {
 
-    const danaNumber =
+    const rekening =
         document
-        .getElementById("danaNumber")
+        .getElementById("rekeningNumber")
         .innerText
         .trim();
 
     navigator.clipboard
-        .writeText(danaNumber)
+        .writeText(rekening)
         .then(() => {
 
             alert(
-                "Nomor DANA berhasil disalin!"
+                "Nomor rekening berhasil disalin!"
             );
 
         })
         .catch(() => {
 
             alert(
-                "Gagal menyalin nomor DANA."
+                "Gagal menyalin nomor rekening."
             );
 
         });
