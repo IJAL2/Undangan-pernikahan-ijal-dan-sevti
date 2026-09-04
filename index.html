@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Undangan Pernikahan Ijal & Sevti</title>
 
-    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
-
-        /* =========================
-           GENERAL
-        ========================= */
 
         * {
             margin: 0;
@@ -38,6 +29,67 @@
             color: #555;
             overflow-x: hidden;
         }
+
+        /* ================= OPENING ================= */
+
+        .opening {
+            position: fixed;
+            inset: 0;
+            background:
+                linear-gradient(
+                    rgba(255, 255, 255, 0.88),
+                    rgba(255, 255, 255, 0.94)
+                ),
+                url('images/01.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            text-align: center;
+            padding: 25px;
+            transition: 1s ease;
+        }
+
+        .opening.hide {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .opening-box {
+            max-width: 420px;
+        }
+
+        .opening-box p {
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #777;
+        }
+
+        .opening-box h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 65px;
+            font-weight: normal;
+            color: #8b6f47;
+            margin: 15px 0;
+        }
+
+        .opening-box h2 {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .open-btn {
+            margin-top: 30px;
+            padding: 13px 30px;
+            border: none;
+            border-radius: 30px;
+            background: #8b6f47;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+        }
+
+        /* ================= GENERAL ================= */
 
         section {
             min-height: 100vh;
@@ -76,87 +128,10 @@
             font-size: 14px;
         }
 
-
-        /* =========================
-           OPENING
-        ========================= */
-
-        .opening {
-            position: fixed;
-            inset: 0;
-
-            background:
-                linear-gradient(
-                    rgba(255, 255, 255, 0.88),
-                    rgba(255, 255, 255, 0.94)
-                ),
-                url('images/01.jpg') center/cover;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            z-index: 9999;
-            text-align: center;
-            padding: 25px;
-
-            transition: 1s ease;
-        }
-
-        .opening.hide {
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        .opening-box {
-            max-width: 420px;
-        }
-
-        .opening-box p {
-            font-size: 14px;
-            letter-spacing: 2px;
-            color: #777;
-        }
-
-        .opening-box h1 {
-            font-family: 'Great Vibes', cursive;
-            font-size: 65px;
-            font-weight: normal;
-            color: #8b6f47;
-            margin: 15px 0;
-        }
-
-        .opening-box h2 {
-            font-size: 20px;
-            font-weight: 400;
-            color: #555;
-        }
-
-        .open-btn {
-            margin-top: 30px;
-            padding: 13px 30px;
-            border: none;
-            border-radius: 30px;
-            background: #8b6f47;
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .open-btn:hover {
-            transform: scale(1.05);
-            background: #735a39;
-        }
-
-
-        /* =========================
-           HERO
-        ========================= */
+        /* ================= HERO ================= */
 
         .hero {
             min-height: 100vh;
-
             background:
                 linear-gradient(
                     rgba(255, 255, 255, 0.45),
@@ -181,10 +156,7 @@
             font-size: 14px;
         }
 
-
-        /* =========================
-           COUPLE
-        ========================= */
+        /* ================= COUPLE ================= */
 
         .couple {
             background: white;
@@ -194,7 +166,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 60px;
+            gap: 50px;
             margin-top: 40px;
         }
 
@@ -206,32 +178,19 @@
             width: 210px;
             height: 260px;
             object-fit: cover;
-
-            border-radius:
-                120px
-                120px
-                20px
-                20px;
-
-            box-shadow:
-                0 15px 35px
-                rgba(0, 0, 0, 0.12);
-
-            transition: 0.5s;
-        }
-
-        .person img:hover {
-            transform: translateY(-10px);
+            border-radius: 120px 120px 20px 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
         }
 
         .person h3 {
-            margin-top: 30px;
-            font-size: 20px;
+            margin-top: 25px;
+            font-size: 18px;
             color: #8b6f47;
             font-weight: normal;
         }
 
         .person p {
+            margin-top: 10px;
             font-size: 13px;
             line-height: 1.8;
         }
@@ -242,10 +201,7 @@
             color: #aaa;
         }
 
-
-        /* =========================
-           COUNTDOWN
-        ========================= */
+        /* ================= COUNTDOWN ================= */
 
         .countdown-section {
             background: #f4f0ea;
@@ -264,10 +220,7 @@
             padding: 18px 10px;
             background: white;
             border-radius: 12px;
-
-            box-shadow:
-                0 8px 20px
-                rgba(0, 0, 0, 0.07);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
         }
 
         .time-box span {
@@ -282,10 +235,7 @@
             color: #999;
         }
 
-
-        /* =========================
-           EVENT
-        ========================= */
+        /* ================= EVENT ================= */
 
         .event {
             background: white;
@@ -295,17 +245,12 @@
             max-width: 500px;
             margin: 35px auto 0;
             padding: 35px 25px;
-
             border-radius: 20px;
             background: #faf8f5;
-
-            box-shadow:
-                0 10px 30px
-                rgba(0, 0, 0, 0.07);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
         }
 
         .event-card h3 {
-            font-size: 20px;
             color: #8b6f47;
             margin-bottom: 15px;
         }
@@ -319,19 +264,14 @@
             display: inline-block;
             margin-top: 20px;
             padding: 11px 25px;
-
             background: #8b6f47;
             color: white;
-
             border-radius: 25px;
             text-decoration: none;
             font-size: 13px;
         }
 
-
-        /* =========================
-           GALLERY
-        ========================= */
+        /* ================= GALLERY ================= */
 
         .gallery {
             background: #f4f0ea;
@@ -339,33 +279,24 @@
 
         .gallery-grid {
             margin-top: 35px;
-
             display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
+            grid-template-columns: repeat(3, 1fr);
             gap: 12px;
         }
 
         .gallery-grid img {
             width: 100%;
             height: 220px;
-
             object-fit: cover;
             border-radius: 12px;
-
-            transition: 0.5s;
+            transition: 0.4s;
         }
 
         .gallery-grid img:hover {
             transform: scale(1.04);
         }
 
-
-        /* =========================
-           BUKU TAMU
-        ========================= */
+        /* ================= RSVP ================= */
 
         .rsvp {
             background: white;
@@ -380,18 +311,11 @@
         .rsvp-box textarea,
         .rsvp-box select {
             width: 100%;
-
             padding: 14px;
-
             margin-bottom: 12px;
-
             border: 1px solid #ddd;
-
             border-radius: 8px;
-
             font-family: 'Poppins', sans-serif;
-
-            outline: none;
             background: white;
         }
 
@@ -402,24 +326,14 @@
 
         .rsvp-btn {
             border: none;
-
             padding: 13px 30px;
-
             background: #8b6f47;
-
             color: white;
-
             border-radius: 25px;
-
             cursor: pointer;
-
-            font-family: 'Poppins', sans-serif;
         }
 
-
-        /* =========================
-           AMPLOP DIGITAL
-        ========================= */
+        /* ================= AMPLOP DIGITAL ================= */
 
         .gift {
             background: #f4f0ea;
@@ -427,37 +341,22 @@
 
         .gift-card {
             max-width: 500px;
-
             margin: 25px auto;
-
-            padding: 30px 20px;
-
+            padding: 25px 20px;
             background: white;
-
             border-radius: 20px;
-
-            box-shadow:
-                0 10px 30px
-                rgba(0, 0, 0, 0.07);
-        }
-
-        .gift-card h3 {
-            color: #8b6f47;
-            margin-bottom: 20px;
-            font-size: 22px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
         }
 
         .bank-info {
             background: #faf8f5;
-
             padding: 25px 20px;
-
             border-radius: 15px;
         }
 
         .bank-info h4 {
             font-size: 24px;
-            color: #555;
+            color: #8b6f47;
             margin-bottom: 10px;
         }
 
@@ -468,45 +367,23 @@
 
         .account-number {
             font-size: 20px;
-
             font-weight: 600;
-
             color: #8b6f47;
-
             margin: 10px 0;
-
             word-break: break-all;
         }
 
         .copy-btn {
-            margin-top: 20px;
-
+            margin-top: 15px;
             padding: 11px 25px;
-
             border: none;
-
             border-radius: 25px;
-
             background: #8b6f47;
-
             color: white;
-
-            font-family: 'Poppins', sans-serif;
-
             cursor: pointer;
-
-            transition: 0.3s;
         }
 
-        .copy-btn:hover {
-            transform: scale(1.05);
-            background: #735a39;
-        }
-
-
-        /* =========================
-           FOOTER
-        ========================= */
+        /* ================= FOOTER ================= */
 
         footer {
             padding: 60px 20px;
@@ -527,84 +404,46 @@
             color: #888;
         }
 
-
-        /* =========================
-           MUSIC BUTTON
-        ========================= */
+        /* ================= MUSIC ================= */
 
         .music-btn {
             position: fixed;
-
             right: 20px;
             bottom: 20px;
-
             width: 50px;
             height: 50px;
-
             border-radius: 50%;
-
             border: none;
-
             background: #8b6f47;
-
             color: white;
-
             font-size: 20px;
-
             z-index: 1000;
-
             cursor: pointer;
-
-            box-shadow:
-                0 5px 15px
-                rgba(0, 0, 0, 0.2);
         }
 
         .music-btn.playing {
             animation: rotate 3s linear infinite;
         }
 
-
-        /* =========================
-           FLOWER
-        ========================= */
+        /* ================= FLOWER ================= */
 
         .flower {
             position: fixed;
-
             top: -30px;
-
             pointer-events: none;
-
             z-index: 500;
-
             opacity: 0.7;
-
-            animation:
-                fall
-                linear
-                forwards;
+            animation: fall linear forwards;
         }
 
-
-        /* =========================
-           ANIMATION
-        ========================= */
-
         @keyframes fall {
-
             to {
-                transform:
-                    translateY(110vh)
-                    rotate(360deg);
-
+                transform: translateY(110vh) rotate(360deg);
                 opacity: 0;
             }
-
         }
 
         @keyframes rotate {
-
             from {
                 transform: rotate(0deg);
             }
@@ -612,11 +451,9 @@
             to {
                 transform: rotate(360deg);
             }
-
         }
 
         @keyframes fadeUp {
-
             from {
                 opacity: 0;
                 transform: translateY(30px);
@@ -626,13 +463,9 @@
                 opacity: 1;
                 transform: translateY(0);
             }
-
         }
 
-
-        /* =========================
-           MOBILE
-        ========================= */
+        /* ================= MOBILE ================= */
 
         @media (max-width: 600px) {
 
@@ -658,30 +491,22 @@
             }
 
             .gallery-grid {
-                grid-template-columns:
-                    repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .gallery-grid img {
                 height: 180px;
             }
-
         }
 
     </style>
-
 </head>
-
 
 <body>
 
-
-    <!-- =========================
-         OPENING
-    ========================= -->
+    <!-- OPENING -->
 
     <div class="opening" id="opening">
-
         <div class="opening-box">
 
             <p>THE WEDDING OF</p>
@@ -690,45 +515,26 @@
 
             <h2>Undangan Pernikahan</h2>
 
-            <button
-                class="open-btn"
-                onclick="openInvitation()">
-
+            <button class="open-btn" onclick="openInvitation()">
                 💌 Buka Undangan
-
             </button>
 
         </div>
-
     </div>
 
 
-    <!-- =========================
-         MUSIC
-    ========================= -->
+    <!-- MUSIC -->
 
     <audio id="music" loop>
-
-        <source
-            src="Rap.mp3"
-            type="audio/mpeg">
-
+        <source src="Rap.mp3" type="audio/mpeg">
     </audio>
 
-
-    <button
-        class="music-btn"
-        id="musicBtn"
-        onclick="toggleMusic()">
-
+    <button class="music-btn" id="musicBtn" onclick="toggleMusic()">
         ♪
-
     </button>
 
 
-    <!-- =========================
-         HERO
-    ========================= -->
+    <!-- HERO -->
 
     <section class="hero">
 
@@ -751,9 +557,7 @@
     </section>
 
 
-    <!-- =========================
-         COUPLE
-    ========================= -->
+    <!-- MEMPELAI -->
 
     <section class="couple">
 
@@ -763,50 +567,30 @@
                 Assalamu'alaikum Warahmatullahi Wabarakatuh
             </p>
 
-
             <h2 class="title">
                 Mempelai
             </h2>
 
-
             <p class="text">
-
                 Dengan memohon rahmat dan ridho Allah SWT,
                 kami bermaksud mengundang Bapak/Ibu/Saudara/i
                 untuk menghadiri acara pernikahan kami.
-
             </p>
-
 
             <div class="couple-wrapper">
 
-
-                <!-- MEMPELAI PRIA -->
-
                 <div class="person">
 
-                    <img
-                        src="images/06.jpg"
-                        alt="Ijal">
-
+                    <img src="images/06.jpg" alt="Ijal">
 
                     <h3>
                         MUHAMAD IKHSAN APRIZAL PRIATNA
                     </h3>
 
-
                     <p>
-
-                        Putra dari
-
-                        <br>
-
-                        Bapak MARSADI/MARGEN
-
-                        <br>
-
+                        Putra dari<br>
+                        Bapak MARSADI/MARGEN<br>
                         & Ibu SURTI
-
                     </p>
 
                 </div>
@@ -817,36 +601,21 @@
                 </div>
 
 
-                <!-- MEMPELAI WANITA -->
-
                 <div class="person">
 
-                    <img
-                        src="images/07.jpg"
-                        alt="Sevti">
-
+                    <img src="images/07.jpg" alt="Sevti">
 
                     <h3>
                         SEVTIANTI
                     </h3>
 
-
                     <p>
-
-                        Putri dari
-
-                        <br>
-
-                        Bapak SUYANDI/YANDI
-
-                        <br>
-
+                        Putri dari<br>
+                        Bapak SUYANDI/YANDI<br>
                         & Ibu SITI ROHANI/ANI
-
                     </p>
 
                 </div>
-
 
             </div>
 
@@ -855,9 +624,7 @@
     </section>
 
 
-    <!-- =========================
-         COUNTDOWN
-    ========================= -->
+    <!-- COUNTDOWN -->
 
     <section class="countdown-section">
 
@@ -867,66 +634,31 @@
                 Menuju Hari Bahagia
             </p>
 
-
             <h2 class="title">
                 Save The Date
             </h2>
 
-
             <div class="countdown">
 
-
                 <div class="time-box">
-
-                    <span id="days">
-                        0
-                    </span>
-
-                    <small>
-                        Hari
-                    </small>
-
+                    <span id="days">0</span>
+                    <small>Hari</small>
                 </div>
 
-
                 <div class="time-box">
-
-                    <span id="hours">
-                        0
-                    </span>
-
-                    <small>
-                        Jam
-                    </small>
-
+                    <span id="hours">0</span>
+                    <small>Jam</small>
                 </div>
 
-
                 <div class="time-box">
-
-                    <span id="minutes">
-                        0
-                    </span>
-
-                    <small>
-                        Menit
-                    </small>
-
+                    <span id="minutes">0</span>
+                    <small>Menit</small>
                 </div>
 
-
                 <div class="time-box">
-
-                    <span id="seconds">
-                        0
-                    </span>
-
-                    <small>
-                        Detik
-                    </small>
-
+                    <span id="seconds">0</span>
+                    <small>Detik</small>
                 </div>
-
 
             </div>
 
@@ -935,9 +667,7 @@
     </section>
 
 
-    <!-- =========================
-         EVENT
-    ========================= -->
+    <!-- WAKTU DAN TEMPAT -->
 
     <section class="event">
 
@@ -947,11 +677,9 @@
                 Insya Allah
             </p>
 
-
             <h2 class="title">
                 Waktu & Tempat
             </h2>
-
 
             <div class="event-card">
 
@@ -959,37 +687,22 @@
                     Akad & Resepsi
                 </h3>
 
-
                 <p>
                     Sabtu, 19 September 2026
                 </p>
 
-
                 <p>
-                    Pukul 09.00 WIB - selesai
+                    Pukul 09.00 WIB - Selesai
                 </p>
-
 
                 <br>
 
-
                 <p>
-
-                    Rumah Acara
-
-                    <br>
-
-                    Kp. Ciodeng RT 03/01,
-                    Desa Palasari,
-                    Kecamatan Legok,
-                    Kabupaten Tangerang
-
-                    <br>
-
-                    Indonesia
-
+                    Rumah Acara<br>
+                    Kp. Ciodeng RT 03/01<br>
+                    Desa Palasari, Kecamatan Legok<br>
+                    Kabupaten Tangerang, Indonesia
                 </p>
-
 
                 <a
                     href="https://maps.app.goo.gl/o4gL2iKCDeP3w1sH8?g_st=ac"
@@ -1007,9 +720,7 @@
     </section>
 
 
-    <!-- =========================
-         GALLERY
-    ========================= -->
+    <!-- GALERI -->
 
     <section class="gallery">
 
@@ -1019,49 +730,19 @@
                 Our Moment
             </p>
 
-
             <h2 class="title">
                 Galeri
             </h2>
 
-
             <div class="gallery-grid">
 
-
-                <img
-                    src="images/01.jpg"
-                    alt="Foto 1">
-
-
-                <img
-                    src="images/02.jpg"
-                    alt="Foto 2">
-
-
-                <img
-                    src="images/03.jpg"
-                    alt="Foto 3">
-
-
-                <img
-                    src="images/04.jpg"
-                    alt="Foto 4">
-
-
-                <img
-                    src="images/05.jpg"
-                    alt="Foto 5">
-
-
-                <img
-                    src="images/06.jpg"
-                    alt="Foto 6">
-
-
-                <img
-                    src="images/07.jpg"
-                    alt="Foto 7">
-
+                <img src="images/01.jpg" alt="Foto 1">
+                <img src="images/02.jpg" alt="Foto 2">
+                <img src="images/03.jpg" alt="Foto 3">
+                <img src="images/04.jpg" alt="Foto 4">
+                <img src="images/05.jpg" alt="Foto 5">
+                <img src="images/06.jpg" alt="Foto 6">
+                <img src="images/07.jpg" alt="Foto 7">
 
             </div>
 
@@ -1070,9 +751,7 @@
     </section>
 
 
-    <!-- =========================
-         BUKU TAMU
-    ========================= -->
+    <!-- BUKU TAMU -->
 
     <section class="rsvp">
 
@@ -1082,34 +761,25 @@
                 Konfirmasi Kehadiran
             </p>
 
-
             <h2 class="title">
                 Buku Tamu
             </h2>
 
-
             <p class="text">
-
-                Kehadiran dan doa restu
-                dari Bapak/Ibu/Saudara/i
-                merupakan kebahagiaan bagi kami.
-
+                Kehadiran dan doa restu Anda merupakan
+                kebahagiaan bagi kami.
             </p>
 
-
             <div class="rsvp-box">
-
 
                 <input
                     type="text"
                     id="nama"
                     placeholder="Nama Anda">
 
-
                 <textarea
                     id="pesan"
-                    placeholder="Ucapan untuk kedua mempelai"></textarea>
-
+                    placeholder="Ucapan dan doa untuk kedua mempelai"></textarea>
 
                 <select id="kehadiran">
 
@@ -1123,7 +793,6 @@
 
                 </select>
 
-
                 <button
                     class="rsvp-btn"
                     onclick="kirimWhatsApp()">
@@ -1132,7 +801,6 @@
 
                 </button>
 
-
             </div>
 
         </div>
@@ -1140,10 +808,7 @@
     </section>
 
 
-    <!-- =========================
-         AMPLOP DIGITAL
-         SETELAH BUKU TAMU
-    ========================= -->
+    <!-- AMPLOP DIGITAL -->
 
     <section class="gift">
 
@@ -1153,72 +818,45 @@
                 Tanda Kasih
             </p>
 
-
             <h2 class="title">
                 Amplop Digital
             </h2>
 
-
             <p class="text">
-
-                Doa restu Anda merupakan
-                hadiah terindah bagi kami.
-
-                <br><br>
-
-                Namun apabila ingin memberikan
-                tanda kasih, dapat dikirimkan
-                melalui rekening berikut.
-
+                Doa restu Anda merupakan hadiah terindah bagi kami.
+                Namun apabila ingin memberikan tanda kasih,
+                dapat dikirimkan melalui rekening berikut.
             </p>
 
 
-            <!-- =========================
-                 DANA
-            ========================= -->
+            <!-- DANA -->
 
             <div class="gift-card">
-
-                <h3>
-                    💳 DANA
-                </h3>
-
 
                 <div class="bank-info">
 
                     <h4>
-                        DANA
+                        💳 DANA
                     </h4>
-
 
                     <p>
                         Nomor DANA
                     </p>
 
-
                     <div class="account-number">
-
                         088293421004
-
                     </div>
 
-
                     <p>
-
-                        a.n.
-
-                        <br>
-
+                        a.n.<br>
                         <strong>
                             MUHAMAD IKHSAN APRIZAL PRIATNA
                         </strong>
-
                     </p>
-
 
                     <button
                         class="copy-btn"
-                        onclick="copyDana()">
+                        onclick="copyText('088293421004', 'Nomor DANA')">
 
                         📋 Salin Nomor DANA
 
@@ -1229,52 +867,34 @@
             </div>
 
 
-            <!-- =========================
-                 BANK MANDIRI
-            ========================= -->
+            <!-- BANK MANDIRI -->
 
             <div class="gift-card">
-
-                <h3>
-                    🏦 Bank Mandiri
-                </h3>
-
 
                 <div class="bank-info">
 
                     <h4>
-                        MANDIRI
+                        🏦 Bank Mandiri
                     </h4>
-
 
                     <p>
                         Nomor Rekening
                     </p>
 
-
                     <div class="account-number">
-
                         1760003805031
-
                     </div>
 
-
                     <p>
-
-                        a.n.
-
-                        <br>
-
+                        a.n.<br>
                         <strong>
                             SEVTIANTI
                         </strong>
-
                     </p>
-
 
                     <button
                         class="copy-btn"
-                        onclick="copyMandiri()">
+                        onclick="copyText('1760003805031', 'Nomor Rekening Mandiri')">
 
                         📋 Salin Nomor Rekening
 
@@ -1284,15 +904,12 @@
 
             </div>
 
-
         </div>
 
     </section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================= -->
+    <!-- FOOTER -->
 
     <footer>
 
@@ -1300,44 +917,28 @@
             Ijal & Sevti
         </h2>
 
-
         <p>
-
-            Terima kasih atas
-            doa dan restu
-            yang diberikan.
-
+            Terima kasih atas doa dan restu
+            yang telah diberikan.
         </p>
-
 
         <p>
             © 2026 Wedding Invitation
         </p>
 
-
-        <p>
-            #IjalSevtiWedding
-        </p>
-
     </footer>
 
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================= -->
-
     <script>
 
-
-        /* =========================
+        /* ===============================
            OPEN INVITATION
-        ========================= */
+        =============================== */
 
         function openInvitation() {
 
             const opening =
                 document.getElementById("opening");
-
 
             opening.classList.add("hide");
 
@@ -1345,9 +946,7 @@
             const music =
                 document.getElementById("music");
 
-
             music.volume = 0.25;
-
 
             music.play()
                 .then(() => {
@@ -1368,15 +967,14 @@
         }
 
 
-        /* =========================
+        /* ===============================
            MUSIC
-        ========================= */
+        =============================== */
 
         function toggleMusic() {
 
             const music =
                 document.getElementById("music");
-
 
             const button =
                 document.getElementById("musicBtn");
@@ -1401,30 +999,25 @@
         }
 
 
-        /* =========================
-           COPY DANA
-        ========================= */
+        /* ===============================
+           COPY ACCOUNT NUMBER
+        =============================== */
 
-        function copyDana() {
-
-            const nomorDana =
-                "088293421004";
-
+        function copyText(number, label) {
 
             navigator.clipboard
-                .writeText(nomorDana)
+                .writeText(number)
                 .then(() => {
 
                     alert(
-                        "Nomor DANA berhasil disalin!"
+                        label + " berhasil disalin!"
                     );
 
                 })
                 .catch(() => {
 
                     alert(
-                        "Nomor DANA: " +
-                        nomorDana
+                        label + ": " + number
                     );
 
                 });
@@ -1432,40 +1025,9 @@
         }
 
 
-        /* =========================
-           COPY MANDIRI
-        ========================= */
-
-        function copyMandiri() {
-
-            const nomorMandiri =
-                "1760003805031";
-
-
-            navigator.clipboard
-                .writeText(nomorMandiri)
-                .then(() => {
-
-                    alert(
-                        "Nomor rekening Mandiri berhasil disalin!"
-                    );
-
-                })
-                .catch(() => {
-
-                    alert(
-                        "Nomor rekening Mandiri: " +
-                        nomorMandiri
-                    );
-
-                });
-
-        }
-
-
-        /* =========================
+        /* ===============================
            COUNTDOWN
-        ========================= */
+        =============================== */
 
         const weddingDate =
             new Date(
@@ -1478,7 +1040,6 @@
             const now =
                 new Date().getTime();
 
-
             const distance =
                 weddingDate - now;
 
@@ -1486,11 +1047,8 @@
             if (distance <= 0) {
 
                 document.getElementById("days").innerHTML = "0";
-
                 document.getElementById("hours").innerHTML = "0";
-
                 document.getElementById("minutes").innerHTML = "0";
-
                 document.getElementById("seconds").innerHTML = "0";
 
                 return;
@@ -1507,61 +1065,37 @@
 
             const hours =
                 Math.floor(
-                    (
-                        distance %
-                        (1000 * 60 * 60 * 24)
-                    )
-                    /
+                    (distance %
+                    (1000 * 60 * 60 * 24)) /
                     (1000 * 60 * 60)
                 );
 
 
             const minutes =
                 Math.floor(
-                    (
-                        distance %
-                        (1000 * 60 * 60)
-                    )
-                    /
+                    (distance %
+                    (1000 * 60 * 60)) /
                     (1000 * 60)
                 );
 
 
             const seconds =
                 Math.floor(
-                    (
-                        distance %
-                        (1000 * 60)
-                    )
-                    /
+                    (distance %
+                    (1000 * 60)) /
                     1000
                 );
 
 
-            document
-                .getElementById("days")
-                .innerHTML = days;
-
-
-            document
-                .getElementById("hours")
-                .innerHTML = hours;
-
-
-            document
-                .getElementById("minutes")
-                .innerHTML = minutes;
-
-
-            document
-                .getElementById("seconds")
-                .innerHTML = seconds;
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
 
         }
 
 
         updateCountdown();
-
 
         setInterval(
             updateCountdown,
@@ -1569,26 +1103,23 @@
         );
 
 
-        /* =========================
+        /* ===============================
            FLOWER ANIMATION
-        ========================= */
+        =============================== */
 
         function createFlower() {
 
             const flower =
                 document.createElement("div");
 
-
             flower.classList.add("flower");
 
 
             const flowers = [
-
                 "🌸",
                 "🌼",
                 "🌺",
                 "🌷"
-
             ];
 
 
@@ -1608,20 +1139,14 @@
 
 
             flower.style.fontSize =
-                (
-                    12 +
-                    Math.random() *
-                    12
-                ) +
+                (12 +
+                Math.random() * 12) +
                 "px";
 
 
             flower.style.animationDuration =
-                (
-                    5 +
-                    Math.random() *
-                    5
-                ) +
+                (5 +
+                Math.random() * 5) +
                 "s";
 
 
@@ -1643,9 +1168,9 @@
         );
 
 
-        /* =========================
+        /* ===============================
            WHATSAPP BUKU TAMU
-        ========================= */
+        =============================== */
 
         function kirimWhatsApp() {
 
@@ -1667,7 +1192,7 @@
                 .value;
 
 
-            if (nama === "") {
+            if (nama.trim() === "") {
 
                 alert(
                     "Silakan isi nama terlebih dahulu."
@@ -1683,31 +1208,26 @@
 
 
             const text =
-
                 "Assalamu'alaikum.%0A%0A" +
 
                 "Nama: " +
-                nama +
+                encodeURIComponent(nama) +
 
                 "%0A%0A" +
 
                 "Ucapan: " +
-                pesan +
+                encodeURIComponent(pesan) +
 
                 "%0A%0A" +
 
                 "Konfirmasi Kehadiran: " +
-                kehadiran;
+                encodeURIComponent(kehadiran);
 
 
             const url =
-
                 "https://wa.me/" +
-
                 nomor +
-
                 "?text=" +
-
                 text;
 
 
@@ -1718,10 +1238,7 @@
 
         }
 
-
     </script>
 
-
 </body>
-
 </html>
